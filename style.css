@@ -1,0 +1,253 @@
+/* styles.css */
+
+
+
+
+/* Hero Section Styling */
+#slider {
+    width: 100%;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto !important; /* Ensure bottom is not affecting positioning */
+    text-align: center; /* Center align text */
+    left: 0; /* Ensure it spans the full width */
+    right: 0; /* Ensure it spans the full width */
+}
+
+.carousel-caption h5 {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 0; /* Remove any margin that may push it off-center */
+    padding: 20px 40px; /* Adjust padding if needed */
+    background-color: rgba(236, 0, 0, 0.5); /* Set the background color of the box */
+    border-radius: 25px; /* Make the corners rounded */
+    display: inline-block; /* Adjust width to fit text */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 15px; /* Adjust font size for smaller screens */
+        padding: 15px 30px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 15px; /* Further adjust font size for very small screens */
+        padding: 10px 20px; /* Further adjust padding for very small screens */
+    }
+}
+
+/* Carousel Inner Height */
+.carousel-inner {
+    max-height: 600px !important;
+}
+
+
+
+/* Adjust the z-index values as needed */
+.navbar {
+    z-index: 1000; /* Lower z-index for the navbar */
+  }
+  
+  #slider {
+    z-index: 2000; /* Higher z-index for the slider */
+  }
+  
+  /* Use position: sticky for a sticky navbar */
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
+
+
+/* Container for image and logo */
+.image-container {
+    position: relative; /* Needed for absolute positioning of the logo */
+}
+
+/* Style for the logo */
+.card-logo {
+    position: absolute;
+    top: 250px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    width: 50px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.8; /* Optional: adjust opacity */
+    z-index: 10; /* Make sure the logo is on top */
+}
+
+/* Ensure the image is displayed correctly */
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+/* Adjust logo size on smaller screens */
+@media (max-width: 576px) {
+    .navbar-brand img {
+        max-height: 40px; /* Reduce the logo size on smaller screens */
+    }
+}
+
+
+    
+
+
+
+#hero p {
+    color: #000000; /* Change this to your desired color (e.g., #ffffff for white) */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    
+}
+
+
+/* Adjust Navbar Link Font Size */
+.navbar-nav .nav-link {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Change 'Arial' to your preferred font */
+    font-size: 1.6rem; /* Increase the font size as needed (e.g., 1.2rem) */
+    font-weight: 500;  /* Optional: Make the font weight bolder */
+}
+
+/* Navbar links */
+.nav-link {
+    color: red!important;
+}
+
+.nav-link:hover {
+    color: #007bff!important;
+}
+
+
+
+
+
+/* Make Navbar Partially Transparent */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.5) !important; /* White background with 80% opacity */
+    border: none; /* Remove any borders */
+    box-shadow: none; /* Remove shadows */
+}
+
+
+
+
+
+/* Background Image with Adjustable Opacity for Services Section */
+#services {
+    position: relative; /* Required for overlay positioning */
+    background-image: url('bg.jpg'); /* Your background image */
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the image */
+    padding: 60px 0; /* Adjust padding as needed */
+    
+}
+
+
+#about {
+    position: relative; /* Required for overlay positioning */
+    background-image: url('abt.jpg'); /* Your background image */
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the image */
+    padding: 60px 0; /* Adjust padding as needed */
+    
+}
+
+/* About Section - Rounded Background */
+.about-content {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.6); /* Set background color with some opacity */
+    padding: 20px; /* Add padding to create space inside the container */
+    border-radius: 15px; /* Adjust border-radius to make rounded corners */
+    display: inline-block; /* Adjust the width to fit the content */
+    color: white; /* Text color for contrast */
+    margin: 0 auto; /* Center align the container */
+}
+
+
+
+/* Testimonial Section Styles */
+#testimonials .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+
+/* Adding a red border to the contact section */
+#contact {
+    border: 3px solid #186997; /* 3px thick solid red border */
+    padding: 20px; /* Optional: Adds padding inside the border */
+}
+
+/* Adding a red border around the form */
+#contact form {
+    border: 3px solid red; /* 3px thick solid red border */
+    padding: 20px; /* Adds padding inside the border */
+    border-radius: 5px; /* Optional: Rounds the corners of the border */
+}
+
+
+
+/* Service Cards */
+.card {
+    margin-top: 20px;
+}
+.card-title{
+    text-align: center;
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #186997!important;
+    color: #fff;
+}
+
+
+
+
+
+
